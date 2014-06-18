@@ -1,0 +1,13 @@
+
+<h3>Enter any character or number separated by 'comma'</h3>
+
+<%= form_for :array, url: sorts_path do |f| %>
+  <p>
+    <%= f.label :array %><br>
+    <%= f.text_field :array %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

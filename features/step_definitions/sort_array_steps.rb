@@ -2,18 +2,18 @@ Given(/^I am at the home page$/) do
   visit root_path
 end
 
-When(/^I fill in 'Array' with '(\d+),Hel, (\d+), (\d+), lo'$/) do |arg1, arg2, arg3|
-
+When(/^I fill in "(.*?)" with "(.*?)"$/) do |arg1, arg2|
+  fill_in arg1, with: arg2
 end
 
 When(/^press save array button$/) do
-  pending # express the regexp above with the code you wish you had
+  click_button "Save Array"
 end
 
-Then(/^I should see '(\d+)'$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+Then(/^I should see '(\d+)'$/) do |output|
+  page.should have_content(output)
 end
 
 Then(/^I should see 'Hello'$/) do
-  pending # express the regexp above with the code you wish you had
+	page.should have_content("Hello")
 end

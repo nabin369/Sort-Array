@@ -1,6 +1,7 @@
 SortArray::Application.routes.draw do
-  get "sorts/index"
+  get "sorts/new"
 
+  root "sorts#new"
 
-  root "sorts#index"
+  resources :sorts
 end
