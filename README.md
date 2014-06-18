@@ -10,3 +10,11 @@ INPUT: ["1", "Hell", "6", "3", "lo"]
 
 OUTPUT: 1- 10 2- 1 3- 6 4- "Hello"
 
+Instructions:
+
+While on homepage 'enter number or strings separated by comma'; 
+for eg:
+	1,2 ,3,He, 6, llo
+	then press 'Save Array' button to see the result,
+	to get to the homepage, click the Sortify link.
+Enjoy
